@@ -400,6 +400,26 @@ then it is likely that the network has upgraded to a new app version but your co
 If you encounter an error like:
 
 ```bash
+2025-11-13 14:48:24 6:48PM ERR App cannot be started without CometBFT when using the multiplexer.
+```
+
+It is possible that one of the historical celestia-app binaries you have downloaded is a multiplexer binary. To resolve you can remove all historical binaries:
+
+```bash
+rm -rf ~/.celestia-app/bin
+```
+
+Re-download all historical binaries:
+
+```bash
+make download-v3-binaries download-v4-binaries download-v5-binaries
+```
+
+### `App cannot be started without CometBFT when using the multiplexer`
+
+If you encounter an error like:
+
+```bash
 ERR failed to LoadFinalizeBlockResponse err="node is not persisting finalize block responses" module=rpc
 ```
 
