@@ -395,7 +395,7 @@ then it is likely that the network has upgraded to a new app version but your co
 1. Download the latest binary for your network.
 1. Restart your consensus node with the relevant `--v2-upgrade-height` for the network you're running on.
 
-### `ERR failed to LoadFinalizeBlockResponse err="node is not persisting finalize block responses"`
+### `App cannot be started without CometBFT when using the multiplexer`
 
 If you encounter an error like:
 
@@ -415,7 +415,7 @@ Re-download all historical binaries:
 make download-v3-binaries download-v4-binaries download-v5-binaries
 ```
 
-### `App cannot be started without CometBFT when using the multiplexer`
+### `ERR failed to LoadFinalizeBlockResponse err="node is not persisting finalize block responses"`
 
 If you encounter an error like:
 
